@@ -1,19 +1,16 @@
 package ch17;
 
-// Fig. 17.11: ReadTextFileTest.java
-// Testing the ReadTextFile class.
+// Fig. 17.14: CreditInquiryTest.java
+// This program tests class CreditInquiry.
 
-public class ReadTextFileTest
-{
+public class CreditInquiryTest
+{  
    public static void main( String[] args )
    {
-      ReadTextFile application = new ReadTextFile();
-
-      application.openFile();
-      application.readRecords();
-      application.closeFile();
+      CreditInquiry application = new CreditInquiry();
+      application.processRequests();
    } // end main
-} // end class ReadTextFileTest
+} // end class CreditInquiryTest
 
 /*************************************************************************
 * (C) Copyright 1992-2010 by Deitel & Associates, Inc. and               *

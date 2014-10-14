@@ -1,19 +1,28 @@
 package ch17;
 
-// Fig. 17.11: ReadTextFileTest.java
-// Testing the ReadTextFile class.
+// Fig. 17.12: MenuOption.java
+// Enumeration for the credit-inquiry program's options.
 
-public class ReadTextFileTest
+public enum MenuOption
 {
-   public static void main( String[] args )
-   {
-      ReadTextFile application = new ReadTextFile();
+   // declare contents of enum type
+   ZERO_BALANCE( 1 ),
+   CREDIT_BALANCE( 2 ),
+   DEBIT_BALANCE( 3 ),
+   END( 4 );
 
-      application.openFile();
-      application.readRecords();
-      application.closeFile();
-   } // end main
-} // end class ReadTextFileTest
+   private final int value; // current menu option
+
+   MenuOption( int valueOption )
+   {
+      value = valueOption;
+   } // end MenuOptions enum constructor
+
+   public int getValue()
+   {
+      return value;
+   } // end method getValue
+} // end enum MenuOption
 
 /*************************************************************************
 * (C) Copyright 1992-2010 by Deitel & Associates, Inc. and               *
