@@ -16,7 +16,7 @@ public class ReadTextFile
    {
       try
       {
-         input = new Scanner( new File( "clients.txt" ) );
+         input = new Scanner( new File( "clients" ) );
       } // end try
       catch ( FileNotFoundException fileNotFoundException )
       {

@@ -6,6 +6,7 @@ package ch17;
 // (credit balance, debit balance or zero balance).
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.lang.IllegalStateException;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
@@ -26,7 +27,7 @@ public class CreditInquiry
       try // read records
       {     
          // open file to read from beginning
-         input = new Scanner( new File( "clients.txt" ) );
+         input = new Scanner( new File( "clients" ) );
 
          while ( input.hasNext() ) // input the values from the file
          {
